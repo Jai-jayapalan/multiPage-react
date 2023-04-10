@@ -1,10 +1,10 @@
 import './App.css';
-import Portfolio from './Components/portfolio'
-import Calculator from './Components/calculator'
+import Portfolio from './Component/portfolia'
+import Calculator from './Component/calculator'
 import React from 'react';
-import DataList from './Components/data';
+import DataList from './Component/data';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar';
+import Navbar from './Component/NavBar';
 
 class App extends React.Component{
 
@@ -14,7 +14,8 @@ class App extends React.Component{
       <div className='App'>
       <Navbar />
     <Routes>
-      <Route exact path='/' element={<Portfolio />}/>
+    <Route exact path='/' element={<Portfolio />}/>
+      <Route exact path='/portfolio' element={<Portfolio />}/>
       <Route path='/calculator' element={<Calculator />}/>
       <Route path='/data' element={<DataList />}/>
       </Routes>

@@ -1,6 +1,5 @@
 import React from "react";
-import profile from 'E:/MyTraining/api_assess/src/utils/images/IMG20230212172424.jpg'
-
+import profile from '../utils/images/IMG20230212172424.jpg'
 const Portfolio=()=>{
     return(
         <div>
